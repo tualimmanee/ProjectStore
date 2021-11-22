@@ -6,14 +6,35 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Warehouse.css'
-import AppImage from './Warehouse01'
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { storage } from 'firebase';
 
-
-    
 
 
 
 const Warehouse = props => {
+    const [files, setFiles] = useState();
+
+useEffect(() => {
+    const fetchImages = async () => {
+      let result = await storage.ref().child("gs://preprojeck.appspot.com/images").listAll();
+      let urlPromises = result.items.map((imageRef) =>
+        imageRef.getDownloadURL()
+      );
+
+      return Promise.all(urlPromises);
+    };
+
+    const loadImages = async () => {
+      const urls = await fetchImages();
+      setFiles(urls);
+    };
+    loadImages();
+}, []);
+
+
+
  return (
 
     <div className="app">
@@ -27,7 +48,7 @@ const Warehouse = props => {
                 </MDBCardBody>
             </MDBCard>
 
-            <AppImage />
+            <useState/>
             
         </div >
     </div>

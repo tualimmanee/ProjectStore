@@ -1,11 +1,11 @@
 import { storage } from "../components/config/config";
 
- // Get all the images from Storage
+
     const [files, setFiles] = useState();
 
 useEffect(() => {
     const fetchImages = async () => {
-      let result = await storage.ref().child("https://preprojeck-default-rtdb.firebaseio.com").listAll();
+      let result = await storage.ref().child("gs://preprojeck.appspot.com/images").listAll();
       let urlPromises = result.items.map((imageRef) =>
         imageRef.getDownloadURL()
       );
@@ -20,4 +20,4 @@ useEffect(() => {
     loadImages();
 }, []);
 
-  console.log(files);
+

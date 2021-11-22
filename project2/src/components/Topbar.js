@@ -23,6 +23,7 @@ const Topbar = () => {
                     <Nav.Link href="/Order">Order</Nav.Link>
                     <Nav.Link href="/Warehouse">Warehouse</Nav.Link>
                     <Nav.Link href="/Upload">Upload</Nav.Link>
+                    <Nav.Link href="/InStorePage">InStorePage</Nav.Link>
                 </Nav>
                 <Form inline>
                     <Button variant="outline-info" onClick={logout}>Logout</Button>
