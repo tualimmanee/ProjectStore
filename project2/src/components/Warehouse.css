@@ -1,0 +1,51 @@
+.Order-header{
+    border-bottom: 1px solid    gray;
+    height: 50px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Order-grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 20px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+
+}
+
+.image{
+    height: 200px;
+    width: 215px;
+    border-radius: 8px;
+
+}
+
+.text{
+    padding: 50px;
+
+}
+
+.polaroid {
+    width: 100%;
+    background-color: rgb(219, 216, 216);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 8px;
+  }
+  
+.container {
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 8px;
+  }
+
+.background{
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
+    background-position: center;
+    background-repeat: repeat;
+}

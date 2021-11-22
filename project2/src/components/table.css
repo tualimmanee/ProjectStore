@@ -1,0 +1,15 @@
+.table{
+    font-size: 18px;
+    align-content: center;
+}
+
+.background_table{
+    background-color: honeydew;
+}
+
+.text{
+    background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+  }

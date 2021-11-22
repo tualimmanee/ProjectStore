@@ -1,0 +1,34 @@
+.LoginForm {
+    
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.back{
+    background-image: url("https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.8d935e8d.jpeg");
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    }
+.grey-text{
+    align-items: flex-end;
+    margin: auto;
+    
+}
+.pig{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
