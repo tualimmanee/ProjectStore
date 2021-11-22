@@ -25,9 +25,10 @@ const Warehouse = props => {
                         <span class="navbar-brand mb-1 h1">Warehouse</span>
                     </form>
                 </MDBCardBody>
-               
             </MDBCard>
+
             <AppImage />
+            
         </div >
     </div>
 

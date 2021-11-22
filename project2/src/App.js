@@ -12,8 +12,6 @@ import Warehouse from './components/Warehouse'
 import Upload from './components/Upload'
 import firebase from './config/firebase'
 
-import Warehouse01 from './components/Warehouse01';
-
 
 class App extends Component {
 
@@ -64,7 +62,6 @@ class App extends Component {
           <Route path="/Order" component={Order} />
           <Route path="/Warehouse" component={Warehouse} />
           <Route path="/Upload" component={Upload} />
-          <Route path="/Warehouse01" component={Warehouse01} />
         </div>
       </div>
     )
